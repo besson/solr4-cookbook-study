@@ -97,7 +97,8 @@
       trailing underscores (e.g. _version_) are reserved.
    -->
    <field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
-   <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+   <field name="id" type="uuid" indexed="true" stored="true" default="NEW" multiValued="false" />
+   <field name="name" type="text_general" indexed="true" stored="true" />
    <field name="text" type="text_general" indexed="true" stored="true" />
 
    <dynamicField name="*_i"  type="int"    indexed="true"  stored="true"/>
@@ -150,9 +151,7 @@
  <!-- Field to use to determine and enforce document uniqueness. 
       Unless this field is marked with required="false", it will be a required field
    -->
- <uniqueKey>id</uniqueKey>
-
- <!-- DEPRECATED: The defaultSearchField is consulted by various query parsers when
+   <!-- DEPRECATED: The defaultSearchField is consulted by various query parsers when
   parsing a query string that isn't explicit about the field.  Machine (non-user)
   generated queries are best made explicit, or they can use the "df" request parameter
   which takes precedence over this.
@@ -190,6 +189,7 @@
        standard package such as org.apache.solr.analysis
     -->
 
+    <fieldType name="uuid" class="solr.UUIDField" indexed="true" />
     <!-- The StrField type is not analyzed, but indexed/stored verbatim. -->
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
 
