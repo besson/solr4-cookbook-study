@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<solr persistent="true">
+  <cores defaultCoreName="c1_page" adminPath="/admin/cores" zkClientTimeout="${zkClientTimeout:15000}" hostPort="8983" hostContext="solr">
+    <core instanceDir="c1_page/" name="c1_page" collection="c1_page"/>
+    <core instanceDir="c1_pdf/" name="c1_pdf" collection="c1_pdf"/>
+  </cores>
+</solr>

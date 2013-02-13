@@ -4,3 +4,17 @@
 *.jar
 *.war
 *.ear
+*.txt
+*.html
+*.txt
+*.xsl
+*.css
+*.vm
+*.js
+**/lang/*
+**/xslt/*
+**/velocity/*
+**/conf/currency.xml
+**/conf/elevate.xml
+**/conf/scripts.conf
+
