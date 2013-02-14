@@ -1,0 +1,7 @@
+<currencyConfig version="1.0" >
+  <rates>
+    <rate from="USD" to="EUR" rate="0.743676" comment="European Euro" />
+    <rate from="USD" to="HKD" rate="7.801922" comment="Hong Kong Dollar" />
+    <rate from="USD" to="GBP" rate="0.647910" comment="United Kingdom Pound" />
+  </rates>
+</currencyConfig>
