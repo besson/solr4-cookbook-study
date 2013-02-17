@@ -5,5 +5,6 @@
     <core instanceDir="c1_pdf/" name="c1_pdf" collection="c1_pdf"/>
     <core instanceDir="c2_mp3/" name="c2_mp3" collection="c2_mp3"/>
     <core instanceDir="c2_currency/" name="c2_currency" collection="c2_currency"/>
+    <core instanceDir="c3_geo/" name="c3_geo" collection="c3_geo"/>
   </cores>
 </solr>
